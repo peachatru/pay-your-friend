@@ -1,2 +1,2 @@
 # pay-your-friend
-From NCSU's CSC342 - Web App Development
+From NCSU's CSC342 Spring 2023- Web App Development
