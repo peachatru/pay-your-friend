@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat+Alternates&family=Poppins&family=Sen:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This is the error banner that lets the user know Stu Dent is blacklisted -->
+    <div class="errorBanner">
+        <h2>ERROR! Stuart (Stu) Dent is banned from this app.</h2>
+     </div>
+       <!-- Sender Details Block -->
+       <div class="row">
+        <div class="col2"></div>
+
+        <div class="col2Middle">
+            <div id="SenderDetails">
+                <h1>Sender Details</h1>
+
+                <!-- image preview -->
+                <img id="preview"/ ><br>     
+                <label for="imageUpload" class="required"></label>
+                <input id="imageUpload" name="imageUpload" type="file" accept="image/*" onchange="previewImage(event)" >
+            
+                <!-- first and last name inputs  -->
+                <div class="row">
+                    <div class="colNames">
+                        <label for="firstName" class="required" >First Name: </label><br>
+                            <input type="text" id="firstName" name="firstName" >
+                       
+                    </div>
+                    <div class="colNames">
+                        <label for="lasName" class="required" > Last Name: </label><br>
+                            <input type="text" id="lastName" name="lastName" >
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+
+    <!-- Recipient Details Block -->
+        <div class="col2Middle">
+            <div id="RecipientDetails">
+                <h1>Recipient Details</h1>
+                <!-- first and last name inputs  -->
+                <div class="row">
+                    <div class="colNames">
+                        <label for="firstNameRecipient" class="required" >First Name: </label><br>
+                        <input type="text"  id="firstNameRecipient" name="firstNameRecipient" >
+                    
+                    </div>
+                    <div class="colNames">
+                        <label for="lastNameRecipient" class="required" >Last Name: </label><br>
+                            <input type="text" id="lastNameRecipient" name="lastNameRecipient" >
+                        
+                    </div>
+                </div> 
+
+                <!-- Message Block -->
+                <div class="row">
+                    <label for="messageArea" class="required" >Message: </label><br><br>
+                </div>
+                <div class="row">
+                    <textarea  id="messageContent" name="messageArea" minlength="10" ></textarea>
+
+                </div>
+         
+
+                <!-- Checkboxes for Notify Recipient -->
+                <div class="row">
+                    <p id="notifyRecipientText">Notify Recipient: </p><br>
+                </div>
+
+                    <div class="row">
+                        <fieldset data-type="horizontal">
+                            <!-- <input type="radio" class="checkbox-round" id="Email">
+                            <label for="Email">Email</label>
+
+                            <input type="radio" class="checkbox-round" id="SMS">
+                            <label for="SMS">SMS</label>
+
+                            <input type="radio" class="checkbox-round" id="DND">
+                            <label for="DND">Do not disturb</label> -->
+                            <input type="checkbox" class="checkbox-round" id="EmailCheckbox" value="EmailCheckbox">
+                            <label for="Email">Email</label>
+
+                            <input type="checkbox" class="checkbox-round" id="SMSCheckbox">
+                            <label for="SMS">SMS</label>
+
+                            <input type="checkbox" class="checkbox-round" id="DNDCheckbox">
+                            <label for="DND">Do not disturb</label>
+                        </fieldset>
+                    </div>
+        
+
+                <!-- Email and Phone Number  -->
+                <div class="row">
+                    <div class="colContact">
+                        <label >
+                            Email: <br>
+                            <input type="text" id="email" >
+                        </label>
+                    </div>
+                    <div class="colContact">
+                        <label>
+                            Phone Number: <br>
+                            <input type="text" id="phoneNumber">
+                        </label>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+
+        <div class="col2"></div>
+
+    </div>
+
+  
+    <!-- payment details -->
+    <div class="rowPaymentDetails">
+        <div class="col2"></div>
+
+        <div>
+            <h1>Payment Details</h1>
+
+            <div class="rowPayment">
+                <!-- Card Type Block -->
+                <div class="colCardType">
+                    <label for="cardType" class="required" >
+                        Card Type: <br>
+                        <select id="cardType" name="cardType">
+                            <option value="Visa">Visa</option>
+                            <option value="Visa">Mastercard</option>
+                            <option value="Visa">American Express</option>
+                            <option value="Visa">Discover</option>
+
+                        </select>
+                    </label>
+                </div>
+
+                <!-- Card Num Block  -->
+                <div class="colCardNum">
+                    <label for="cardNumber" class="required" >Card Number: </label><br>
+                    <input type="text" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                   
+                </div>
+            </div>
+
+            <div class="rowPayment">
+                <!--  Expiration Block -->
+                <div class="col3">
+                    <label for="Expiration" class="required" >Expiration: </label><br>
+
+                    <input  type="month" id="Expiration">
+             
+                </div>
+
+                <!-- CCV -->
+                <div class="col3">
+                    <label for="CCV" class="required" >CCV: </label><br>
+
+                        <input type="text" id="CCV">
+                   
+                </div>
+
+                <!-- Amount($)  -->
+                <div class="col3">
+                    <label for="Amount" class="required" >Amount($): </label><br>
+
+                        <input  type="text" id="Amount" step="0.01">
+                  
+                </div>
+               
+            </div>
+
+
+            <!-- Acknowledge Terms and Conditions -->
+            <div class="rowPayment">
+                <input type="checkbox" id="termsAndConditions">
+                <label for="termsAndConditions" class="required" >I agree to the Terms and Conditions
+                </label><br>
+                    
+            </div>
+
+            <!-- Send Button! -->
+            <div class="rowPayment">
+                <!-- <input type="submit" id="submitPayment" class="SendButton" value="submit"> -->
+                <!-- <input type="submit" class="send" id="submitButton" value="submit"> 
+                -->
+                 <input type="submit" class="SendButton" value="Send" />
+                <!-- <button id="buttonSabe" value="test" onclick="submit()">Submit!</button> -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

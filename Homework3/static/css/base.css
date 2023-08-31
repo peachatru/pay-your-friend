@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.col2 {
+  width: 30%;
+  padding: 10px;
+}
+
+.col2Middle {
+    width: 30%;
+    padding: 10px;
+    border-bottom: solid;
+  }
+
+.row {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+textarea {
+    width: 475px; 
+    height: 200px;
+}
+
+.colNames, .colContact {
+    padding-right: 40px; 
+    padding-left: 0px;
+}
+#SenderDetails h1 {
+    text-align: center;
+}
+
+#RecipientDetails {
+    border-left: solid;
+    padding-left: 40px;
+}
+
+#RecipientDetails h1 {
+   text-align: center;
+}
+
+.rowPaymentDetails {
+    padding-left: 30%;
+    width: 68%;
+
+    display: flex;
+    align-items: center;
+}
+
+.rowPaymentDetails h1 {
+    text-align: left; 
+}
+
+.rowSeparator {
+    border-top: solid;
+}
+.rowPayment {
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 20px;
+}
+
+
+p#notifyRecipientText{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.checkbox-round {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+
+    cursor: pointer; 
+}
+
+.checkbox-round:checked {
+    background-color:#a48ae9;
+
+}
+
+.colCardType, .colCardNum {
+    padding-right: 40px; 
+    padding-left: 0px;
+
+    align-items: center; 
+}
+
+.col3 {
+    padding-right: 20px;
+}
+
+input#CCV {
+    width: 50px;
+}
+
+input#Amount {
+    width: 140px;
+}
+
+.SendButton {
+    width: 345px;
+    height: 40px;
+
+    background: #c4afff;
+}
+
+img {
+    width: 400px; 
+    height: auto; 
+}
+
+.required::after { 
+    content:"*";
+    color: #9a69e9; 
+    font-size: 20px;
+}
+
+ .successPopup {
+    background: #91afe3;
+    color: white; 
+    text-align: center;
+    height: 200px;
+ }
+
+ .successPopup h2 {
+    font-size: 60px;
+    padding-top: 40px;
+    margin: 0px;
+
+
+ }
+ .errorBanner {
+    background: #91afe3;
+    color: white; 
+    text-align: center;
+    height: 150px;
+ }
+ .errorBanner h2 {
+    font-size: 60px;
+    padding-top: 40px;
+    margin: 0px;
+
+ }
